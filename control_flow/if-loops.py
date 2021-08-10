@@ -35,8 +35,20 @@
 # try to make the code robust (idiot proof)
 
 
-age = int(input("How old are you?\n"))
-film_certificate = (input("What certificate movie are you watching\n"))
+prompt_user = True
+
+while prompt_user:
+    age = input("What is your age?\n")
+    if age.isdigit():
+        if int(age) < 120:
+            age = int(age)
+            prompt_user = False
+        else:
+            print("don't be silly")
+    else:
+        print("please provide age in digits")
+
+film_certificate = input("What certificate movie are you watching\n")
 if age >= 18:
     print("You can watch all movies")
 elif age >= 15 and (film_certificate == "U" or film_certificate == "PG" or film_certificate == "12A" or
@@ -51,5 +63,3 @@ elif age >= 10 and (film_certificate == "PG" or film_certificate == "12A" or
 elif age < 9 and (film_certificate == "PG" or film_certificate == "12A" or
                   film_certificate == "15" or film_certificate == "18"):
     print("You can only watch U movies")
-else:
-    print("Please print your age in __ format")
