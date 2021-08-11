@@ -1,8 +1,8 @@
-def square(num):
-    result = num ** 2
-    return result
-
-print(square(10))
+# def square(num):
+#     result = num ** 2
+#     return result
+#
+# print(square(10))
 
 
 
@@ -14,3 +14,19 @@ print(square(10))
 
 # local scope is stuff defined only for functions
 # we can define functions inside of another function
+
+
+var = 1000
+
+def get_var():
+    var = 5
+    return var
+
+print(get_var())
+print(var)
+
+
+# debug, modules, special variables - whenever you call
+# a variable starts with __ (double _)
+
+
