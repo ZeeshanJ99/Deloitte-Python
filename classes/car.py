@@ -11,29 +11,31 @@
 
 
 class Car:
-    def __init__(self, max_speed):
+    def __init__(self, max_speed, speed=0):
         self.max_speed = max_speed
-        self.speed = 0
+        self.speed = speed
+
+    def accelerate(self):
+        self.speed += 10
+
+    def brake(self):
+        self.speed -= 10
 
     def get_speed(self):
         return self.speed
 
-    def accelerate(self, accelerate):
-        self.speed += accelerate
 
-    def decelerate(self, decelerate):
-        self.speed -= decelerate
-
-
-c = Car(0)
-c.accelerate(20)
-c.decelerate(20)
+c = Car(150)
+c.accelerate()
+c.brake()
 print(c.get_speed())
 
 
 
-
-
+# c = Car.max_speed(180)
+# c.accelerate(50)
+# c.decelerate(10)
 # print(c.get_speed())
+
 
 
