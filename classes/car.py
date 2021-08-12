@@ -11,31 +11,27 @@
 
 
 class Car:
-    def __init__(self, max_speed, speed=0):
+    def __init__(self, max_speed):
         self.max_speed = max_speed
-        self.speed = speed
-
-    def accelerate(self):
-        self.speed += 10
-
-    def brake(self):
-        self.speed -= 10
+        self._speed = 0
 
     def get_speed(self):
-        return self.speed
+        return self._speed
+
+    def accelerate(self, speed_increase):
+        new_speed = self._speed + speed_increase
+        self._speed = min(self.max_speed, new_speed)
+
+    def brake(self, speed_decrease):
+        self._speed = max(0, self._speed - speed_decrease)
 
 
-c = Car(150)
-c.accelerate()
-c.brake()
+c = Car(180)
+c.accelerate(40)
+c.accelerate(20)
+c.brake(10)
 print(c.get_speed())
 
-
-
-# c = Car.max_speed(180)
-# c.accelerate(50)
-# c.decelerate(10)
-# print(c.get_speed())
-
+# car is the max speed it wont go over that or below 0
 
 
