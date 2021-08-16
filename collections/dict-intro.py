@@ -1,8 +1,8 @@
-# Dictionaries
+Dictionaries
 
-# Dictionary = a collection of Key-Value Pairs, only can look up key first then the value  like a real life dictionary
-# we seperate key value pairs with commas
-# with pycharm we can't have duplicate keys
+Dictionary = a collection of Key-Value Pairs, only can look up key first then the value  like a real life dictionary
+we seperate key value pairs with commas
+with pycharm we can't have duplicate keys
 # about_me = {
 #     "name": "Zeeshan",
 #     "age": 22,

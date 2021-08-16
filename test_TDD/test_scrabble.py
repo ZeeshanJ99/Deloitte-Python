@@ -57,12 +57,16 @@ def test_valid_word():
 
 
 def test_invalid_word():
+    s = ScrabbleHand()
     s.tiles = "CJTUDSI"
     assert s.is_valid_word("NUDIST") is False
 
+
 def test_invalid_word_repeated_letters():
+    s = ScrabbleHand
     s.tiles = "CJTUDSI"
     assert s.is_valid_word("JIUJITSU") is False
+
 
 def test_get_score():
     s = ScrabbleHand

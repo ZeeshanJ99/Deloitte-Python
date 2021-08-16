@@ -1,6 +1,6 @@
-# classes bring functions and data together
-# unlike functions and variables classes use uppercase
-# (start with capital letters e.g. WonderDog)
+classes bring functions and data together
+unlike functions and variables classes use uppercase
+(start with capital letters e.g. WonderDog)
 # class Dog:
 #     animal_type = "canine"
 #

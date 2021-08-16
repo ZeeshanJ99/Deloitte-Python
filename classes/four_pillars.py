@@ -1,5 +1,5 @@
 # four pillars
-
+#
 # Abstraction - use methods to make life easier
 # Encapsulation - hide away dangerous things (hide things we dont want users to interact with directly)
 # Inheritance -
@@ -113,18 +113,4 @@
 # A method to return the score for a submitted word
 # a method to use the methods above to check a word is valid
 # and if it is, return the score for that word
-
-
-
-
-
-
-
-
-
-
-
-
-
-
 

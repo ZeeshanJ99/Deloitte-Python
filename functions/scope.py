@@ -11,7 +11,7 @@
 # enclosed
 # global
 # built-in
-
+#
 # local scope is stuff defined only for functions
 # we can define functions inside of another function
 

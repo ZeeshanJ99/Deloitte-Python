@@ -3,7 +3,7 @@
 # function names use snakecase-
 # lowercase with _
 # need round brackets and colon
-
+#
 # once we define it can use it later, define functions
 # at the top
 # customise how function behaves by giving it input
